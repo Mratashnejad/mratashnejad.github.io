@@ -63,15 +63,24 @@
     }
 
     :root {
-      --bg: #0a0a0a;
-      --surface: #111111;
-      --surface2: #181818;
-      --border: #222222;
-      --accent: #FF3838;
-      --accent2: #7eb8c9;
-      --text: #e8e4dc;
-      --muted: #6a6460;
-      --mid: #9a948c;
+      --bg: #FFFFFF;
+      /* پس‌زمینه اصلی کاملاً روشن */
+      --surface: #F5F5F7;
+      /* سطوح ثانویه (مثل کارت‌ها) خاکستری خیلی روشن */
+      --surface2: #EFEFEF;
+      /* برای بخش‌های مجزا مثل فوتر یا هدر */
+      --border: #E0E0E0;
+      /* خطوط جداکننده نرم */
+      --accent: #D32F2F;
+      /* قرمز تیره و حرفه‌ای برای تاکید (Buttons/Icons) */
+      --accent2: #4A90A2;
+      /* آبی-خاکستری برای موارد فرعی مثل نشان Anabin */
+      --text: #1D1D1F;
+      /* متن اصلی (تقریباً مشکی برای کنتراست بالا) */
+      --muted: #86868B;
+      /* متن‌های فرعی و کمرنگ‌تر */
+      --mid: #6E6E73;
+      /* متن‌های با اهمیت متوسط */
       --max-w: 1020px;
     }
 
@@ -605,6 +614,19 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
+    }
+
+    .anabin-badge {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      border: 1px solid #c8e6c9;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
     }
 
     .edu-card {
@@ -1293,41 +1315,48 @@
       <h2>Education</h2>
       <div class="edu-grid">
         <div>
-          <div class="edu-card">
-            <div class="edu-degree">B.Sc. Computer Software Engineering</div>
-            <div class="edu-school">Azad University (IAU) <span class="text-sm">Anabin Status: H+ (Germany
-                Recognized)</span></div>
-            <div class="edu-date">2012 – 2014 · </div>
-          </div>
-          <div class="edu-card">
-            <div class="edu-degree">A.Sc. Computer Software Engineering</div>
-            <div class="edu-school">Shahid Chamran University</div>
-            <div class="edu-date">2010 – 2012</div>
-          </div>
-          <div class="award">
-            <div class="award-icon">🥇</div>
-            <div>
-              <div class="award-title">World Karate Championship</div>
-              <div class="award-sub">Gold Medal · 2002</div>
+          <div>
+            <div class="edu-card">
+              <div class="edu-degree">B.Sc. Computer Software Engineering</div>
+              <div class="edu-school">
+                Azad University (IAU)
+                <span class="anabin-badge" title="Institution is recognized in Germany">
+                  Anabin H+ Recognized
+                </span>
+              </div>
+              <div class="edu-date">2012 – 2014</div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-degree">A.Sc. Computer Software Engineering</div>
+              <div class="edu-school">Shahid Chamran University</div>
+              <div class="edu-date">2010 – 2012</div>
+            </div>
+
+            <div class="award">
+              <div class="award-icon">🥇</div>
+              <div>
+                <div class="award-title">World Karate Championship</div>
+                <div class="award-sub">Gold Medal · 2002</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div>
-          <div class="section-label" style="margin-bottom:1.25rem;">Certifications</div>
-          <ul class="cert-list">
-            <li>Kaggle — Python for Data Science</li>
-            <li>Kaggle — Deep Learning</li>
-            <li>LinkedIn — Machine Learning Foundations</li>
-            <li>MCSA — Microsoft Certified Solutions Associate</li>
-            <li>CCNA — Cisco Certified Network Associate</li>
-            <li>MikroTik — MTCNA</li>
-            <li>VMware — ESXi Administration</li>
-            <li>Hacker.io — Software Engineering</li>
-          </ul>
+          <div>
+            <div class="section-label" style="margin-bottom:1.25rem;">Certifications</div>
+            <ul class="cert-list">
+              <li>Kaggle — Python for Data Science</li>
+              <li>Kaggle — Deep Learning</li>
+              <li>LinkedIn — Machine Learning Foundations</li>
+              <li>MCSA — Microsoft Certified Solutions Associate</li>
+              <li>CCNA — Cisco Certified Network Associate</li>
+              <li>MikroTik — MTCNA</li>
+              <li>VMware — ESXi Administration</li>
+              <li>Hacker.io — Software Engineering</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
   <div class="divider"></div>
