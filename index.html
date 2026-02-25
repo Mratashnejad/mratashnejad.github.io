@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
   <title>Alireza Atashnejad — Senior Software Engineer & Architect</title>
-  <meta name="description" content="Senior Software Engineer with 10+ years of experience in scalable systems, microservices architecture, TypeScript, C# .NET, DevOps, and AI/ML. Based in Yerevan, Armenia." />
-  <meta name="keywords" content="Alireza Atashnejad, Software Engineer, Software Architect, TypeScript, C#, .NET, Next.js, DevOps, Microservices, Yerevan, Armenia" />
+  <meta name="description"
+    content="Senior Software Engineer with 10+ years of experience in scalable systems, microservices architecture, TypeScript, C# .NET, DevOps, and AI/ML. Based in Yerevan, Armenia." />
+  <meta name="keywords"
+    content="Alireza Atashnejad, Software Engineer, Software Architect, TypeScript, C#, .NET, Next.js, DevOps, Microservices, Yerevan, Armenia" />
   <meta name="author" content="Alireza Atashnejad" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://atashnejad.github.io/" />
@@ -15,7 +18,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Alireza Atashnejad — Senior Software Engineer & Architect" />
-  <meta property="og:description" content="10+ years building scalable, high-performance systems. Expert in microservices, TypeScript, C# .NET, and DevOps." />
+  <meta property="og:description"
+    content="10+ years building scalable, high-performance systems. Expert in microservices, TypeScript, C# .NET, and DevOps." />
   <meta property="og:url" content="https://atashnejad.github.io/" />
   <meta property="og:image" content="https://atashnejad.github.io/og-image.jpg" />
 
@@ -45,10 +49,18 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #0a0a0a;
@@ -63,7 +75,9 @@
       --max-w: 1020px;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background: var(--bg);
@@ -85,18 +99,25 @@
       opacity: 0.4;
     }
 
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
     /* ---- NAV ---- */
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       padding: 1.25rem 0;
-      background: rgba(10,10,10,0.85);
+      background: rgba(10, 10, 10, 0.85);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
+
     nav .inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -105,6 +126,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .nav-logo {
       font-family: 'DM Mono', monospace;
       font-size: 0.85rem;
@@ -112,7 +134,13 @@
       letter-spacing: 0.1em;
       text-decoration: none;
     }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
     .nav-links a {
       font-size: 0.8rem;
       color: var(--muted);
@@ -121,7 +149,10 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--accent); }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
 
     /* ---- HERO ---- */
     header {
@@ -129,12 +160,14 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 4rem;
       align-items: start;
     }
+
     .hero-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -146,6 +179,7 @@
       align-items: center;
       gap: 0.75rem;
     }
+
     .hero-label::before {
       content: '';
       display: block;
@@ -153,6 +187,7 @@
       height: 1px;
       background: var(--accent);
     }
+
     h1 {
       font-family: 'DM Serif Display', serif;
       font-size: clamp(3rem, 5vw, 4.5rem);
@@ -161,10 +196,12 @@
       margin-bottom: 1.5rem;
       color: var(--text);
     }
+
     h1 em {
       font-style: italic;
       color: var(--accent);
     }
+
     .hero-sub {
       font-size: 1.05rem;
       color: var(--mid);
@@ -172,7 +209,13 @@
       line-height: 1.75;
       margin-bottom: 2.5rem;
     }
-    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -188,28 +231,40 @@
       border: none;
       transition: all 0.2s;
     }
+
     .btn-primary {
       background: var(--accent);
       color: #0a0a0a;
     }
-    .btn-primary:hover { background: #d4b87a; transform: translateY(-1px); }
+
+    .btn-primary:hover {
+      background: #d4b87a;
+      transform: translateY(-1px);
+    }
+
     .btn-outline {
       background: transparent;
       color: var(--mid);
       border: 1px solid var(--border);
     }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
     /* Profile Image */
     .profile-wrap {
       position: relative;
       flex-shrink: 0;
     }
+
     .profile-img-container {
       width: 180px;
       height: 220px;
       position: relative;
     }
+
     .profile-img-container::before {
       content: '';
       position: absolute;
@@ -218,6 +273,7 @@
       border-radius: 3px;
       z-index: 0;
     }
+
     .profile-img {
       width: 100%;
       height: 100%;
@@ -229,6 +285,7 @@
       display: block;
       background: var(--surface2);
     }
+
     /* Placeholder if no image */
     .profile-placeholder {
       width: 100%;
@@ -244,10 +301,11 @@
       font-size: 4rem;
       color: var(--muted);
     }
+
     .profile-badge {
       position: absolute;
-      bottom: -1rem;
-      right: -1rem;
+      bottom: 0.5rem;
+      right: 0.5rem;
       background: var(--accent);
       color: #0a0a0a;
       font-family: 'DM Mono', monospace;
@@ -266,6 +324,7 @@
       padding-top: 2rem;
       border-top: 1px solid var(--border);
     }
+
     .meta-item {
       display: flex;
       align-items: center;
@@ -275,19 +334,32 @@
       color: var(--muted);
       letter-spacing: 0.05em;
     }
+
     .meta-dot {
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       background: #4ade80;
       border-radius: 50%;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
 
     /* ---- SECTION COMMON ---- */
-    section { padding: 5rem 0; }
+    section {
+      padding: 5rem 0;
+    }
+
     .section-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -296,6 +368,7 @@
       text-transform: uppercase;
       margin-bottom: 0.75rem;
     }
+
     h2 {
       font-family: 'DM Serif Display', serif;
       font-size: clamp(2rem, 3vw, 2.8rem);
@@ -303,12 +376,14 @@
       color: var(--text);
       margin-bottom: 3rem;
     }
+
     h3 {
       font-family: 'DM Serif Display', serif;
       font-size: 1.3rem;
       color: var(--text);
       margin-bottom: 0.4rem;
     }
+
     .divider {
       height: 1px;
       background: var(--border);
@@ -316,12 +391,16 @@
     }
 
     /* ---- SKILLS ---- */
-    #skills { background: var(--surface); }
+    #skills {
+      background: var(--surface);
+    }
+
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
+
     .skill-card {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -329,7 +408,12 @@
       padding: 1.75rem;
       transition: border-color 0.2s, transform 0.2s;
     }
-    .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    .skill-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
     .skill-card-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
@@ -338,7 +422,13 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
     .tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -351,7 +441,12 @@
     }
 
     /* ---- EXPERIENCE ---- */
-    .exp-list { display: flex; flex-direction: column; gap: 0; }
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
     .exp-item {
       display: grid;
       grid-template-columns: 180px 1fr;
@@ -360,7 +455,11 @@
       border-bottom: 1px solid var(--border);
       position: relative;
     }
-    .exp-item:last-child { border-bottom: none; }
+
+    .exp-item:last-child {
+      border-bottom: none;
+    }
+
     .exp-date {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -368,6 +467,7 @@
       letter-spacing: 0.05em;
       padding-top: 0.3rem;
     }
+
     .exp-company {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -376,13 +476,21 @@
       text-transform: uppercase;
       margin-bottom: 0.3rem;
     }
+
     .exp-desc {
       font-size: 0.9rem;
       color: var(--mid);
       line-height: 1.7;
       margin-top: 0.6rem;
     }
-    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+
     .exp-tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -393,12 +501,16 @@
     }
 
     /* ---- PROJECTS ---- */
-    #projects { background: var(--surface); }
+    #projects {
+      background: var(--surface);
+    }
+
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 1.25rem;
     }
+
     .project-card {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -410,16 +522,27 @@
       position: relative;
       overflow: hidden;
     }
+
     .project-card::after {
       content: '↗';
       position: absolute;
-      top: 1.5rem; right: 1.5rem;
+      top: 1.5rem;
+      right: 1.5rem;
       color: var(--muted);
       font-size: 1rem;
       transition: color 0.2s, transform 0.2s;
     }
-    .project-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .project-card:hover::after { color: var(--accent); transform: translate(2px, -2px); }
+
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .project-card:hover::after {
+      color: var(--accent);
+      transform: translate(2px, -2px);
+    }
+
     .project-num {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -427,28 +550,32 @@
       letter-spacing: 0.1em;
       margin-bottom: 1rem;
     }
+
     .project-title {
       font-family: 'DM Serif Display', serif;
       font-size: 1.2rem;
       color: var(--text);
       margin-bottom: 0.5rem;
     }
+
     .project-desc {
       font-size: 0.85rem;
       color: var(--muted);
       line-height: 1.65;
       margin-bottom: 1.25rem;
     }
+
     .project-stack {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
       color: var(--accent2);
       letter-spacing: 0.05em;
     }
+
     .badge-soon {
       display: inline-block;
-      background: rgba(200,169,110,0.1);
-      border: 1px solid rgba(200,169,110,0.3);
+      background: rgba(200, 169, 110, 0.1);
+      border: 1px solid rgba(200, 169, 110, 0.3);
       color: var(--accent);
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -465,17 +592,20 @@
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
     }
+
     .edu-card {
       border-left: 2px solid var(--accent);
       padding-left: 1.5rem;
       margin-bottom: 2rem;
     }
+
     .edu-degree {
       font-family: 'DM Serif Display', serif;
       font-size: 1.1rem;
       color: var(--text);
       margin-bottom: 0.3rem;
     }
+
     .edu-school {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -483,8 +613,16 @@
       letter-spacing: 0.08em;
       margin-bottom: 0.3rem;
     }
-    .edu-date { font-size: 0.8rem; color: var(--muted); }
-    .cert-list { list-style: none; }
+
+    .edu-date {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .cert-list {
+      list-style: none;
+    }
+
     .cert-list li {
       display: flex;
       align-items: flex-start;
@@ -494,7 +632,11 @@
       padding: 0.65rem 0;
       border-bottom: 1px solid var(--border);
     }
-    .cert-list li:last-child { border-bottom: none; }
+
+    .cert-list li:last-child {
+      border-bottom: none;
+    }
+
     .cert-list li::before {
       content: '▸';
       color: var(--accent);
@@ -502,39 +644,58 @@
       font-size: 0.7rem;
       margin-top: 0.2rem;
     }
+
     .award {
       margin-top: 1.5rem;
-      background: linear-gradient(135deg, rgba(200,169,110,0.08), transparent);
-      border: 1px solid rgba(200,169,110,0.25);
+      background: linear-gradient(135deg, rgba(200, 169, 110, 0.08), transparent);
+      border: 1px solid rgba(200, 169, 110, 0.25);
       border-radius: 3px;
       padding: 1.25rem 1.5rem;
       display: flex;
       align-items: center;
       gap: 1rem;
     }
-    .award-icon { font-size: 1.8rem; }
+
+    .award-icon {
+      font-size: 1.8rem;
+    }
+
     .award-title {
       font-family: 'DM Serif Display', serif;
       font-size: 1rem;
       color: var(--accent);
     }
-    .award-sub { font-size: 0.8rem; color: var(--muted); }
+
+    .award-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
 
     /* ---- CONTACT ---- */
-    #contact { background: var(--surface); }
+    #contact {
+      background: var(--surface);
+    }
+
     .contact-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: start;
     }
+
     .contact-intro {
       font-size: 1rem;
       color: var(--mid);
       line-height: 1.8;
       margin-bottom: 2rem;
     }
-    .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
     .contact-link {
       display: flex;
       align-items: center;
@@ -547,7 +708,12 @@
       border-radius: 2px;
       transition: all 0.2s;
     }
-    .contact-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    .contact-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
     .contact-link-icon {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -557,8 +723,18 @@
     }
 
     /* Email Form */
-    .email-form { display: flex; flex-direction: column; gap: 1rem; }
-    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
     .form-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -566,7 +742,9 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
     }
-    .form-input, .form-textarea {
+
+    .form-input,
+    .form-textarea {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 2px;
@@ -579,8 +757,16 @@
       resize: none;
       outline: none;
     }
-    .form-input:focus, .form-textarea:focus { border-color: var(--accent); }
-    .form-textarea { min-height: 130px; }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-textarea {
+      min-height: 130px;
+    }
+
     .form-submit {
       align-self: flex-start;
     }
@@ -594,6 +780,7 @@
       justify-content: space-between;
       flex-wrap: gap;
     }
+
     footer .container {
       display: flex;
       align-items: center;
@@ -602,13 +789,19 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
+
     .footer-copy {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
       color: var(--muted);
       letter-spacing: 0.05em;
     }
-    .footer-socials { display: flex; gap: 1.5rem; }
+
+    .footer-socials {
+      display: flex;
+      gap: 1.5rem;
+    }
+
     .footer-socials a {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -617,7 +810,10 @@
       letter-spacing: 0.08em;
       transition: color 0.2s;
     }
-    .footer-socials a:hover { color: var(--accent); }
+
+    .footer-socials a:hover {
+      color: var(--accent);
+    }
 
     /* ---- ANIMATIONS ---- */
     .fade-in {
@@ -625,27 +821,70 @@
       transform: translateY(20px);
       animation: fadeIn 0.7s ease forwards;
     }
+
     @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .fade-in:nth-child(1) { animation-delay: 0.1s; }
-    .fade-in:nth-child(2) { animation-delay: 0.2s; }
-    .fade-in:nth-child(3) { animation-delay: 0.3s; }
-    .fade-in:nth-child(4) { animation-delay: 0.4s; }
+
+    .fade-in:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .fade-in:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .fade-in:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .fade-in:nth-child(4) {
+      animation-delay: 0.4s;
+    }
 
     /* ---- RESPONSIVE ---- */
     @media (max-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .profile-wrap { display: none; }
-      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
-      .edu-grid { grid-template-columns: 1fr; }
-      .contact-wrapper { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      h1 { font-size: 2.5rem; }
-      .hero-meta { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-wrap {
+        display: none;
+      }
+
+      .exp-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+
+      .edu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -667,12 +906,14 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="hero-label fade-in">Senior Software Engineer & Architect</div>
+          <div class="hero-label fade-in">Senior Software Engineer · Software Architect</div>
           <h1 class="fade-in">
             Alireza<br /><em>Atashnejad</em>
           </h1>
           <p class="hero-sub fade-in">
-            10+ years building scalable, high-performance systems. Specialized in microservices architecture, full-stack TypeScript & C# .NET ecosystems, and DevOps infrastructure.
+            10+ years building scalable, high-performance products. Specialized in microservices architecture,
+            full-stack
+            TypeScript & C# / .NET ecosystems, and DevOps infrastructure for production systems.
           </p>
           <div class="hero-ctas fade-in">
             <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -685,23 +926,18 @@
               <span class="meta-dot"></span>
               Available for Opportunities
             </div>
-            <div class="meta-item">📍 Yerevan, Armenia</div>
-            <div class="meta-item">🌍 Open to Relocation</div>
+            <div class="meta-item">Open to Relocation <span class="fade-in">(Germany)</span></div>
+            <div class="meta-item">Yerevan, Armenia</div>
           </div>
         </div>
 
         <div class="profile-wrap fade-in">
           <div class="profile-img-container">
-            <!-- Replace src with your actual photo path -->
-            <img
-              src="1.jpg"
-              alt="Alireza Atashnejad - Senior Software Engineer"
-              class="profile-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
+            <img src="1.jpg" alt="Alireza Atashnejad - Senior Software Engineer" class="profile-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <div class="profile-placeholder" style="display:none;">AA</div>
+            <div class="profile-badge">10+ YRS EXP</div>
           </div>
-          <div class="profile-badge">10+ YRS EXP</div>
         </div>
       </div>
     </div>
@@ -720,61 +956,70 @@
           <div class="skill-tags">
             <span class="tag">C#</span>
             <span class="tag">TypeScript</span>
-            <span class="tag">Python</span>
             <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">SQL</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">Bash</span>
           </div>
         </div>
+
         <div class="skill-card">
           <div class="skill-card-label">Frontend</div>
           <div class="skill-tags">
-            <span class="tag">Next.js App Router</span>
+            <span class="tag">Next.js (App Router)</span>
             <span class="tag">React</span>
             <span class="tag">Tailwind CSS</span>
             <span class="tag">SSR / SSG</span>
             <span class="tag">SEO Optimization</span>
+            <span class="tag">Core Web Vitals</span>
           </div>
         </div>
+
         <div class="skill-card">
           <div class="skill-card-label">Backend & Architecture</div>
           <div class="skill-tags">
-            <span class="tag">C# .NET</span>
-            <span class="tag">Microsoft .NET</span>
+            <span class="tag">C# / .NET</span>
             <span class="tag">Microservices</span>
             <span class="tag">Node.js</span>
             <span class="tag">GraphQL</span>
             <span class="tag">REST APIs</span>
             <span class="tag">Monorepo</span>
+            <span class="tag">Distributed Systems</span>
           </div>
         </div>
+
         <div class="skill-card">
-          <div class="skill-card-label">Databases & ORM</div>
+          <div class="skill-card-label">Databases · ORM · Caching</div>
           <div class="skill-tags">
             <span class="tag">PostgreSQL</span>
-            <span class="tag">Microsoft EF CORE</span>
+            <span class="tag">Entity Framework Core</span>
             <span class="tag">Redis</span>
             <span class="tag">Prisma</span>
-            <span class="tag">TypeORM</span>
           </div>
         </div>
+
         <div class="skill-card">
           <div class="skill-card-label">DevOps & Infrastructure</div>
           <div class="skill-tags">
-            <span class="tag">Docker</span>
-            <span class="tag">Ansible</span>
-            <span class="tag">Nginx</span>
-            <span class="tag">Grafana</span>
             <span class="tag">Linux</span>
-            <span class="tag">OVHCloud</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">OVHcloud</span>
           </div>
         </div>
+
         <div class="skill-card">
-          <div class="skill-card-label">Specializations</div>
+          <div class="skill-card-label">Security · AI</div>
           <div class="skill-tags">
-            <span class="tag">AI/ML (TensorFlow)</span>
             <span class="tag">OAuth 2.0</span>
             <span class="tag">JWT</span>
             <span class="tag">Secure OTP</span>
-            <span class="tag">Keras</span>
+            <span class="tag">OpenAI API</span>
+            <span class="tag">TensorFlow / Keras</span>
           </div>
         </div>
       </div>
@@ -796,31 +1041,25 @@
             <div class="exp-company">ANQ.am & Dorob.am</div>
             <h3>Founder & Lead Software Engineer</h3>
             <p class="exp-desc">
-              Architected and deployed AI-driven platforms utilizing Monorepo architecture. Optimized systems for high-load data processing and SEO excellence.
+              Founded and architected AI-driven platforms using a scalable monorepo approach. Built high-performance
+              backend
+              services, SEO-optimized frontend experiences, and production-ready infrastructure designed for growth and
+              high-load traffic.
             </p>
             <div class="exp-tags">
-              <span class="exp-tag">Monorepo</span>
-              <span class="exp-tag">AI/ML</span>
+              <span class="exp-tag">System Architecture</span>
+              <span class="exp-tag">Microservices</span>
+              <span class="exp-tag">NX Monorepo</span>
+              <span class="exp-tag">C# / .NET</span>
+              <span class="exp-tag">TypeScript</span>
               <span class="exp-tag">Next.js</span>
-              <span class="exp-tag">C# .NET</span>
-              <span class="exp-tag">SEO</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="exp-item">
-          <div class="exp-date">2024 – Present</div>
-          <div>
-            <div class="exp-company">Cannonbet.info</div>
-            <h3>Senior Software Developer</h3>
-            <p class="exp-desc">
-              Leading development of a high-traffic platform, ensuring 99.9% uptime and robust security. Implementing advanced caching strategies and secure API integrations.
-            </p>
-            <div class="exp-tags">
-              <span class="exp-tag">High-Traffic</span>
-              <span class="exp-tag">Caching</span>
-              <span class="exp-tag">Security</span>
-              <span class="exp-tag">API Design</span>
+              <span class="exp-tag">Tailwind CSS</span>
+              <span class="exp-tag">GraphQL</span>
+              <span class="exp-tag">PostgreSQL</span>
+              <span class="exp-tag">Redis</span>
+              <span class="exp-tag">Docker & Linux</span>
+              <span class="exp-tag">OpenAI API</span>
+              <span class="exp-tag">Technical SEO</span>
             </div>
           </div>
         </article>
@@ -829,14 +1068,22 @@
           <div class="exp-date">2024 – Present</div>
           <div>
             <div class="exp-company">Leosoft Technologies Inc.</div>
-            <h3>Senior Software Engineer</h3>
+            <h3>Senior Software Developer</h3>
             <p class="exp-desc">
-              Developing scalable full-stack web solutions and optimizing core web vitals for production-grade applications.
+              Leading development of a high-traffic platform with strong reliability and security standards. Designing
+              scalable services, improving performance, and implementing caching and secure API integrations to support
+              production workloads.
             </p>
             <div class="exp-tags">
-              <span class="exp-tag">Full-Stack</span>
-              <span class="exp-tag">Core Web Vitals</span>
-              <span class="exp-tag">Performance</span>
+              <span class="exp-tag">Software Architecture</span>
+              <span class="exp-tag">Microservices</span>
+              <span class="exp-tag">C# / .NET</span>
+              <span class="exp-tag">TypeScript</span>
+              <span class="exp-tag">Next.js</span>
+              <span class="exp-tag">GraphQL</span>
+              <span class="exp-tag">Redis Caching</span>
+              <span class="exp-tag">Docker</span>
+              <span class="exp-tag">Performance Optimization</span>
             </div>
           </div>
         </article>
@@ -844,33 +1091,78 @@
         <article class="exp-item">
           <div class="exp-date">2019 – 2023</div>
           <div>
-            <div class="exp-company">SoftConstruct</div>
+            <div class="exp-company">SoftConstruct</div> & <div class="exp-company">AliAtish</div>
             <h3>IT Specialist & Infrastructure Lead</h3>
             <p class="exp-desc">
-              Managed enterprise network infrastructure and implemented automated monitoring systems via Grafana for large-scale production environments.
+              Delivered software solutions and managed infrastructure for enterprise clients. Supported deployments,
+              automation, and service reliability across multiple environments.
             </p>
             <div class="exp-tags">
-              <span class="exp-tag">Infrastructure</span>
-              <span class="exp-tag">Grafana</span>
-              <span class="exp-tag">Monitoring</span>
-              <span class="exp-tag">Networking</span>
-              <span class="exp-tag">Ansible</span>
+              <span class="exp-tag">Enterprise Development</span>
+              <span class="exp-tag">Infrastructure Management</span>
+              <span class="exp-tag">REST APIs</span>
+              <span class="exp-tag">C# / .NET</span>
+              <span class="exp-tag">TypeScript</span>
+              <span class="exp-tag">Docker</span>
             </div>
           </div>
         </article>
 
         <article class="exp-item">
-          <div class="exp-date">Earlier Roles</div>
+          <div class="exp-date">Earlier Experience</div>
           <div>
             <div class="exp-company">Fani Informatic Institute & High Tech</div>
             <h3>Founder / CEO & Team Lead</h3>
             <p class="exp-desc">
-              Founded and led technical teams across software development and educational technology ventures. Total professional experience spans 10+ years.
+              Founded and led technical teams across software development and educational technology. Mentored
+              developers,
+              delivered training programs, and managed delivery across multiple client projects.
             </p>
             <div class="exp-tags">
               <span class="exp-tag">Leadership</span>
-              <span class="exp-tag">Entrepreneurship</span>
               <span class="exp-tag">Team Building</span>
+              <span class="exp-tag">Software Engineering</span>
+              <span class="exp-tag">Technical Training</span>
+              <span class="exp-tag">C# · C++ · HTML/CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-date">Earlier Experience</div>
+          <div>
+            <div class="exp-company">Hanemid Dairy Factory</div>
+            <h3>Software Engineer / Team Lead</h3>
+            <p class="exp-desc">
+              Designed and developed custom CRM and ERP systems for a large-scale dairy manufacturer, focusing on
+              scalable
+              architecture, operational efficiency, and a smooth internal user experience.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">CRM Systems</span>
+              <span class="exp-tag">ERP Systems</span>
+              <span class="exp-tag">C# / .NET</span>
+              <span class="exp-tag">SQL Server</span>
+              <span class="exp-tag">Team Leadership</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-date">Earlier Experience</div>
+          <div>
+            <div class="exp-company">Tabasheer</div>
+            <h3>Software Engineer</h3>
+            <p class="exp-desc">
+              Contributed to building and maintaining internal business systems (CRM/ERP) for a regional e-commerce
+              platform.
+              Improved reliability, maintainability, and performance of core workflows.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">CRM Development</span>
+              <span class="exp-tag">ERP Systems</span>
+              <span class="exp-tag">C# / .NET</span>
+              <span class="exp-tag">SQL Server</span>
             </div>
           </div>
         </article>
@@ -891,58 +1183,77 @@
         <a href="https://anq.am" target="_blank" rel="noopener noreferrer" class="project-card">
           <div class="project-num">01</div>
           <div class="project-title">ANQ.am</div>
-          <p class="project-desc">Top job & service marketplace in Armenia. AI-powered matching and high-load data processing.</p>
-          <div class="project-stack">C# .NET · Next.js · GraphQL · PostgreSQL</div>
+          <p class="project-desc">
+            AI-powered job and services marketplace in Armenia with scalable architecture, fast search, and SEO-first
+            performance.
+          </p>
+          <div class="project-stack">C# / .NET · Next.js · GraphQL · PostgreSQL · Redis</div>
         </a>
 
         <a href="https://dorob.am" target="_blank" rel="noopener noreferrer" class="project-card">
           <div class="project-num">02</div>
           <div class="project-title">Dorob.am</div>
-          <p class="project-desc">Smart price comparison and data aggregation platform with real-time crawling and analytics.</p>
-          <div class="project-stack">C# .NET · Python · TypeScript · PostgreSQL</div>
-        </a>
-         <a href="https://jaamjahani.com" target="_blank" rel="noopener noreferrer" class="project-card">
-          <div class="project-num">06</div>
-          <div class="project-title">Jaamjahani.com</div>
-          <p class="project-desc">Sports news and live data tracking platform with real-time scores and stats feeds.</p>
-          <div class="project-stack">Next.js · WebSocket · REST · Redis</div>
+          <p class="project-desc">
+            Smart price comparison and data aggregation platform with crawling, normalization, and analytics pipelines.
+          </p>
+          <div class="project-stack">C# / .NET · Next.js · TypeScript · Python · PostgreSQL · GraphQL</div>
         </a>
 
+        <a href="https://jaamjahani.com" target="_blank" rel="noopener noreferrer" class="project-card">
+          <div class="project-num">03</div>
+          <div class="project-title">Jaamjahani.com</div>
+          <p class="project-desc">
+            Sports news and live data tracking platform with real-time scores, feeds, and performance-focused delivery.
+          </p>
+          <div class="project-stack">Next.js · WebSocket · REST APIs · Redis</div>
+        </a>
 
         <a href="/" target="_blank" rel="noopener noreferrer" class="project-card">
-          <div class="project-num">03</div>
-          <div class="project-title">News Site</div>
-          <p class="project-desc">High-traffic news & data platform with real-time updates, 99.9% uptime SLA, and scalable APIs.</p>
+          <div class="project-num">04</div>
+          <div class="project-title">High-Traffic News Platform</div>
+          <p class="project-desc">
+            High-load news and data platform with real-time updates, scalable APIs, and strong reliability targets.
+          </p>
           <div class="project-stack">Microservices · Redis · WebSocket · Next.js</div>
         </a>
 
         <a href="https://mersad.co" target="_blank" rel="noopener noreferrer" class="project-card">
-          <div class="project-num">04</div>
+          <div class="project-num">05</div>
           <div class="project-title">Mersad.co</div>
-          <p class="project-desc">Enterprise software solutions for industrial management and workflow automation.</p>
-          <div class="project-stack">C# .NET · TypeScript · PostgreSQL</div>
+          <p class="project-desc">
+            Enterprise workflow and industrial management solutions with custom modules and scalable backend services.
+          </p>
+          <div class="project-stack">C# / .NET · TypeScript · PostgreSQL</div>
         </a>
 
         <a href="https://tabasheer.com" target="_blank" rel="noopener noreferrer" class="project-card">
-          <div class="project-num">05</div>
+          <div class="project-num">06</div>
           <div class="project-title">Tabasheer.com</div>
-          <p class="project-desc">Scalable e-commerce/service platform with integrated payment flows and order management.</p>
-          <div class="project-stack">Next.js · Node.js · PostgreSQL · Stripe</div>
+          <p class="project-desc">
+            E-commerce/service platform with integrated payment flows, order management, and scalable data handling.
+          </p>
+          <div class="project-stack">Next.js · Node.js · PostgreSQL · Payments</div>
         </a>
-
 
         <a href="#" class="project-card">
           <div class="project-num">07</div>
           <div class="project-title">Havalearzi.com <span class="badge-soon">Soon</span></div>
-          <p class="project-desc">Currency exchange and financial tracking system launching Q1 2026.</p>
-          <div class="project-stack">TypeScript · C# .NET · PostgreSQL</div>
+          <p class="project-desc">Currency exchange and financial tracking system planned for 2026.</p>
+          <div class="project-stack">TypeScript · C# / .NET · PostgreSQL · GraphQL</div>
         </a>
 
         <a href="#" class="project-card">
           <div class="project-num">08</div>
           <div class="project-title">Darinrooz.ir <span class="badge-soon">Soon</span></div>
-          <p class="project-desc">Modern retail and inventory management platform launching Q1 2026.</p>
-          <div class="project-stack">Next.js · C# .NET · PostgreSQL</div>
+          <p class="project-desc">Modern retail and inventory management platform planned for 2026.</p>
+          <div class="project-stack">Next.js · C# / .NET · PostgreSQL · GraphQL</div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-num">09</div>
+          <div class="project-title">Sogandstar.com <span class="badge-soon">Soon</span></div>
+          <p class="project-desc">E-commerce and inventory management platform planned for 2026.</p>
+          <div class="project-stack">Next.js · C# / .NET · PostgreSQL · GraphQL</div>
         </a>
 
       </div>
@@ -972,20 +1283,22 @@
             <div class="award-icon">🥇</div>
             <div>
               <div class="award-title">World Karate Championship</div>
-              <div class="award-sub">Gold Medal · 2004</div>
+              <div class="award-sub">Gold Medal · 2002</div>
             </div>
           </div>
         </div>
+
         <div>
           <div class="section-label" style="margin-bottom:1.25rem;">Certifications</div>
           <ul class="cert-list">
             <li>Kaggle — Python for Data Science</li>
-            <li>Kaggle — Deep Learning Certification</li>
+            <li>Kaggle — Deep Learning</li>
             <li>LinkedIn — Machine Learning Foundations</li>
             <li>MCSA — Microsoft Certified Solutions Associate</li>
             <li>CCNA — Cisco Certified Network Associate</li>
-            <li>MikroTik — MTCNA Certification</li>
-            <li>VMware — ESXi 6.5 Administration</li>
+            <li>MikroTik — MTCNA</li>
+            <li>VMware — ESXi Administration</li>
+            <li>Hacker.io — Software Engineering</li>
           </ul>
         </div>
       </div>
@@ -1002,14 +1315,16 @@
       <div class="contact-wrapper">
         <div>
           <p class="contact-intro">
-            Open to senior engineering roles, architectural consulting, and technical partnerships. Based in Yerevan — open to relocation or remote collaboration.
+            Open to senior engineering roles, architectural consulting, and technical partnerships. Based in Yerevan —
+            open to relocation or remote collaboration.
           </p>
           <div class="contact-links">
-            <a href="mailto:your@email.com" class="contact-link">
+            <a href="mailto:aliatish372@email.com" class="contact-link">
               <span class="contact-link-icon">EMAIL</span>
               aliatish372@email.com
             </a>
-            <a href="https://linkedin.com/in/alirezaatashnejad" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <a href="https://linkedin.com/in/alirezaatashnejad" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
               <span class="contact-link-icon">LINKEDIN</span>
               linkedin.com/in/alirezaatashnejad
             </a>
@@ -1036,10 +1351,13 @@
           </div>
           <div class="form-group">
             <label class="form-label" for="fmsg">Message</label>
-            <textarea class="form-textarea" id="fmsg" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <textarea class="form-textarea" id="fmsg" name="message"
+              placeholder="Tell me about your project or opportunity..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary form-submit">Send Message ↗</button>
-          <p id="form-status" style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent);display:none;margin-top:0.5rem;"></p>
+          <p id="form-status"
+            style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent);display:none;margin-top:0.5rem;">
+          </p>
         </form>
       </div>
     </div>
@@ -1096,7 +1414,7 @@
       const message = document.getElementById('fmsg').value;
       const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
       const body = encodeURIComponent(`From: ${name} <${email}>\n\n${message}`);
-      window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:aliatish372@email.com?subject=${subject}&body=${body}`;
       const status = document.getElementById('form-status');
       status.style.display = 'block';
       status.textContent = '✓ Opening your email client...';
@@ -1104,4 +1422,5 @@
   </script>
 
 </body>
+
 </html>
